@@ -14,12 +14,12 @@ const storeThoughts =
         '"The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.” – Winston Churchill ',
         '"The time is always right to do what is right.” – Martin Luther King Jr']
 
+let thought = generateRandomNumber(storeThoughts.length)
 
-
-function formatWisdom() {
-    let thought = generateRandomNumber(storeThoughts.length)
+function formatWisdom(thought) {
+ 
     console.log("Hi beautiful soul, Here is the motivational thought for you!!")
     console.log(storeThoughts[thought])
 }
 
-formatWisdom();
+formatWisdom(thought);
